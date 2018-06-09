@@ -33,10 +33,10 @@ With plain javascript,
 ```js
 try { 
 	foo() 
-	console.log('foo success')
+    console.log('foo success')
 	try { 
-		bar() 
-		console.log('bar success')
+	    bar() 
+	    console.log('bar success')
 	} 
 	catch (error) {
 	    console.log('bar error')
