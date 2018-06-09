@@ -6,8 +6,8 @@
  In plain JavaScript, if you want to do something if no error is thrown, there is no success statement for it. You can do it the following way:
 ```js
 try {
-	foo() // error may be thrown here
-	console.log('success') // if no error is thrown, this line executes
+    foo() // error may be thrown here
+    console.log('success') // if no error is thrown, this line executes
 } catch (error) {
     console.log('error')
 }
@@ -22,11 +22,11 @@ Better readability, without comments. Plus, the ordering of `.catch` and `.succe
 ### Problem 2: Nested error handling
  Real advantage of using **try.js** can be seen in this example. Let's say that the algorithm is:
 
- 1. **See if `foo()` throws error**
-	2. if throws, write `'foo error'` on the console.
-	3. if does not throw, write `'foo success'` on the console and **see if `bar()` throws error**
-		 4. if throws, write '`bar error'` on the console.
-		 5. if does not throw, write `'bar success'` on the console.
+1. **See if `foo()` throws error**
+2. if throws, write `'foo error'` on the console.
+3. if does not throw, write `'foo success'` on the console and **see if `bar()` throws error**
+4. if throws, write '`bar error'` on the console.
+5. if does not throw, write `'bar success'` on the console.
 
 With plain javascript, 
 
