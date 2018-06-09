@@ -32,7 +32,7 @@ With plain javascript,
 
 ```js
 try { 
-	foo() 
+    foo() 
     console.log('foo success')
 	try { 
 	    bar() 
