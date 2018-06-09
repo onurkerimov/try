@@ -34,13 +34,13 @@ With plain javascript,
 try { 
     foo() 
     console.log('foo success')
-	try { 
-	    bar() 
-	    console.log('bar success')
-	} 
-	catch (error) {
-	    console.log('bar error')
-	}
+    try { 
+        bar() 
+        console.log('bar success')
+    } 
+    catch (error) {
+        console.log('bar error')
+    }
 } catch (error) {
     console.log('foo error')
 }
