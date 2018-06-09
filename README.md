@@ -50,7 +50,7 @@ With **try.js**, the above example becomes:
 $.try(() => { foo() })
 .catch(() => { console.log('foo error') })
 .success(() => {
-	console.log('foo success')
+    console.log('foo success')
     $.try(() => { bar() })
 	.catch(() => { console.log('bar error') })
 	.success(() => { console.log('bar success') })
